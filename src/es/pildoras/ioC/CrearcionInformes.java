@@ -1,9 +1,8 @@
 package es.pildoras.ioC;
 
-public interface Empleados {
-
-	public String getTareas();
+public interface CrearcionInformes {
 	
 	public String getInforme();
+	
 
 }
