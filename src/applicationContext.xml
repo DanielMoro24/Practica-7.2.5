@@ -19,7 +19,13 @@
 
 <bean id="miEmpleado" class="es.pildoras.ioC.JefeEmpleado">
 
-<constructor-arg ref="miInforme"></constructor-arg>
+	<constructor-arg ref="miInforme"></constructor-arg>
+
+</bean>
+
+<bean id="miSecretario" class="es.pildoras.ioC.SecretarioEmpleado">
+
+	<property name="informeNuevo" ref="miInforme"></property>
 
 </bean>
 
