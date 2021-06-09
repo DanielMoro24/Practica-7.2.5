@@ -17,15 +17,23 @@
 
 </bean>
 
-<bean id="miEmpleado" class="es.pildoras.ioC.JefeEmpleado">
+<bean id="miEmpleado" class="es.pildoras.ioC.DirectorEmpleado">
 
 	<constructor-arg ref="miInforme"></constructor-arg>
+	
+	<property name="email" value="equipo_directivo@pildorasinformaticas.es"></property>
+	
+	<property name="nomEmpresa" value="Pildoras Informaticas"></property>
 
 </bean>
 
 <bean id="miSecretario" class="es.pildoras.ioC.SecretarioEmpleado">
 
 	<property name="informeNuevo" ref="miInforme"></property>
+	
+	<property name="email" value="secretaria@pildorasinformaticas.es"></property>
+	
+	<property name="nomEmpresa" value="Pildoras Informaticas"></property>
 
 </bean>
 

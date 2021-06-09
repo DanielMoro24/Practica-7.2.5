@@ -3,9 +3,27 @@ package es.pildoras.ioC;
 public class SecretarioEmpleado implements Empleados {
 
 	private CrearcionInformes informeNuevo;
+	private String email;
+	private String nomEmpresa;
 
 	public void setInformeNuevo(CrearcionInformes informeNuevo) {
 		this.informeNuevo = informeNuevo;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getNomEmpresa() {
+		return nomEmpresa;
+	}
+
+	public void setNomEmpresa(String nomEmpresa) {
+		this.nomEmpresa = nomEmpresa;
 	}
 
 	@Override
