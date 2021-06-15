@@ -32,6 +32,8 @@ public class UseAnnotation2 {
 		 * System.out.println(Antonio + "\n" + Lucia); } else {
 		 * System.out.println("No apuntan al mismo lugar en memoria");
 		 * System.out.println(Antonio + "\n" + Lucia); }
+		 * 
+		 * 
 		 */
 
 		contexto.close();
