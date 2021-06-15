@@ -14,11 +14,19 @@ public class UseAnnotation2 {
 
 		AnnotationConfigApplicationContext contexto = new AnnotationConfigApplicationContext(EmpleadosConfig.class);
 
-		Empleados empleado = contexto.getBean("directorFinanciero", Empleados.class);
+		DirectorFinanciero empleado = contexto.getBean("directorFinanciero", DirectorFinanciero.class);
 
-		System.out.println(empleado.getTareas());
+		System.out.println("Email director: "+empleado.getEmail());
 
-		System.out.println(empleado.getInforme());
+		System.out.println("Nombre de la empresa: "+empleado.getNombreEmpresa());
+
+		/*
+		 * Empleados empleado = contexto.getBean("directorFinanciero", Empleados.class);
+		 * 
+		 * System.out.println(empleado.getTareas());
+		 * 
+		 * System.out.println(empleado.getInforme());
+		 */
 
 		/*
 		 * Empleados Antonio = contexto.getBean("comercialExperimentado",
